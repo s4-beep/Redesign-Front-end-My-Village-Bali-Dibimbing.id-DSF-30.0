@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Villa Website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navbar-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#d-room">Our Room</a></li>
+      <li><a href="#rebar">Restaurant & Bar</a></li>
+      <li><a href="#service">Our Service</a></li>
+      <li><a href="#explore">Explore</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Banner Section -->
+  <section class="banner" id="home">
+    <div class="banner-content">
+      <div class="banner-text">
+        <img src="gambar2/logo.png" alt="Logo" class="banner-logo" />
+        <h1>Find Your Room Here</h1>
+        <p><br />Take Advantage of the Lowest Available Prices.</p>
+      </div>
+      <div class="banner-form">
+        <form class="form-booking">
+          <div class="grup-input">
+            <i class="fas fa-calendar-alt"></i>
+            <label for="check-in">Check-in:</label>
+            <input type="date" id="check-in" placeholder="Select date" />
+          </div>
+          <div class="grup-input">
+            <i class="fas fa-calendar-alt"></i>
+            <label for="check-out">Check-out:</label>
+            <input type="date" id="check-out" placeholder="Select date" />
+          </div>
+          <div class="grup-input">
+            <i class="fas fa-user"></i>
+            <label for="guess-adult">Guess Adult:</label>
+            <input
+              type="number"
+              id="guess-adult"
+              placeholder="Number of adults"
+            />
+          </div>
+          <div class="grup-input">
+            <i class="fas fa-child"></i>
+            <label for="guess-child">Guess Child:</label>
+            <input
+              type="number"
+              id="guess-child"
+              placeholder="Number of children"
+            />
+          </div>
+          <button type="submit">Find My Room</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us" id="about">
+    <div class="about-us-content">
+      <div class="about-us-image">
+        <video src="gambar2/about.mp4" alt="Villa" autoplay loop>
+      </div>
+      <div class="about-us-text">
+        <h2>Discover Our Story</h2>
+        <p>Located in Uluwatu, 200 m from Impossible Beach, Village Bali provides accommodation with an outdoor swimming pool, free private parking, a bar and a garden.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Decoration Image Section -->
+  <section class="decoration-image" id="d-room">
+    <img src="gambar2/secroom.jpg" alt="Decoration Image" />
+    <h1>Let's Stay With Us</h1>
+  </section>
+
+  <!-- Room Section -->
+  <section class="rooms" id="rooms">
+    <div class="rooms-container">
+      <!-- Room 1 -->
+      <div class="room">
+        <div class="room-image">
+          <img src="gambar2/room1.jpg" alt="Room 1" />
+          <div class="room-availability">
+            <i class="fas fa-check-circle"></i> Available
+          </div>
+        </div>
+        <div class="room-details">
+          <h3>Deluxe Queen Room</h3>
+          <p>This double room has a minibar, lounge chair, private garden and air conditioning.</p>
+        </div>
+        <div class="room-footer">
+          <input type="text" class="promo-code" placeholder="Enter promo code" />
+          <button class="book-now"><strong>Book Now</strong></button>
+        </div>
+      </div>
+
+      <!-- Room 2 -->
+      <div class="room">
+        <div class="room-image">
+          <img src="gambar2/room2.jpg" alt="Room 2" />
+          <div class="room-availability not-available">
+            <i class="fas fa-times-circle"></i> Not Available
+          </div>
+        </div>
+        <div class="room-details">
+          <h3>Superior King Room</h3>
+          <p>This double room has a minibar, private entrance and air conditioning.</p>
+        </div>
+        <div class="room-footer">
+          <input type="text" class="promo-code" placeholder="Enter promo code" />
+          <button class="book-now"><strong>Book Now</strong></button>
+        </div>
+      </div>
+
+      <!-- Room 3 -->
+      <div class="room">
+        <div class="room-image">
+          <img src="gambar2/room3.jpg" alt="Room 3" />
+          <div class="room-availability">
+            <i class="fas fa-check-circle"></i> Available
+          </div>
+        </div>
+        <div class="room-details">
+          <h3>King Deluxe Room & Bathtub</h3>
+          <p>This twin/double room features air conditioning, private entrance and minibar.</p>
+        </div>
+        <div class="room-footer">
+          <input type="text" class="promo-code" placeholder="Enter promo code" />
+          <button class="book-now"><strong>Book Now</strong></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Explore Image Section -->
+    <section class="decoration-image2" id="explore">
+      <img src="gambar2/uluwatu.jpg" alt="Decoration Image" />
+      <h1>Explore Uluwatu Beach</h1>
+      <p>Attractions in the area include Uluwatu Temple, 5 km away, or Suluban Uluwatu Beach, situated 4.2 km from the property.</p>
+    </section>
+
+    <!-- Service Section -->
+<section id="service" class="service-section">
+  <div class="container">
+    <h2 class="section-title">Our Services & Benefit</h2>
+    <p class="section-subtitle">Explore the luxurious services we offer for your comfort and convenience</p>
+    <div class="service-icons">
+      <div class="service-item">
+        <i class="fas fa-spa"></i>
+        <h3>Massage</h3>
+        <p>A gentle massage service by our professional therapists will give you the most satisfying relaxation that you have ever experienced.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Yoga</h3>
+        <p>Village Bali holistic approach to wellness extends beyond relaxation and outer beauty to include yoga, a time-honored practice for mental and physical wellbeing.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-tshirt"></i>
+        <h3>Laundry</h3>
+        <p>We provides a premium laundry, ironing, dry cleaning service for our guest.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-motorcycle"></i>
+        <h3>Motorbike Rental</h3>
+        <p>Secure and book your motorbike or scooter to explore beautiful Bali in a convenient way.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-bus"></i>
+        <h3>Transport</h3>
+        <p>Village Bali will provide transport services for guests to and from hotel at an additional charge.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-plane"></i>
+        <h3>Airport Pick-up</h3>
+        <p>A shuttle service from the airport can be arranged for guests upon request. Additional charges apply.</p>
+      </div>
+      <div class="service-item">
+        <i class="fas fa-utensils"></i>
+        <h3>Restaurant & Bar</h3>
+        <p>Enjoy the dining experience with various menu selection at our restaurant.</p>
+      </div>
+      <div class="service-item">
+        <i class="fa-solid fa-person-swimming"></i>
+        <h3>Surf</h3>
+        <p>Village Bali is just next to the most famous Bali Surf Spots.</p>
+      </div>
+    </div>
+    <a href="#" class="button-service">See More Benefits</a>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <!-- Google Maps Embed -->
+      <div class="footer-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.732616558355!2d115.08925401414024!3d-8.818155181737067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2234567890abc%3A0x1234567890abcdef!2sJl.%20Pemutih%2C%20Pecatu%2C%20Kec.%20Kuta%20Sel.%2C%20Kabupaten%20Badung%2C%20Bali%2080361!5e0!3m2!1sen!2sid!4v1630990225355!5m2!1sen!2sid"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- Contact Us Information -->
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Jl. Pemutih, Pecatu, Kec. Kuta Sel.,
+          <br>Kabupaten Badung, Bali 80361</p>
+        <p><br>
+          <br>Email: villagebali@outlook.com</p>
+        <p>Phone: +62 81237523203
+          <br>
+          <br>______________________________
+        </p>
+        <div class="social-media">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p><br>
+        <br>© bootcamp dibimbing, village impossible, Bali. 2024
+      <br>by Salsa Arravi, Front-end</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".navbar-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

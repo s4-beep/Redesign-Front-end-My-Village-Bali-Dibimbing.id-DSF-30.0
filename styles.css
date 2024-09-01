@@ -1,0 +1,712 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monoton&family=New+Amsterdam&family=Oswald:wght@200..700&family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Teko:wght@300..700&family=Tilt+Prism&family=Zen+Tokyo+Zoo&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* BODY CSS */
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+
+
+
+/* NAVBAR CSS */
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-toggle i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a.active {
+  background-color: #fff;
+  color: #a08324;
+  border-radius: 2px;
+}
+
+.navbar-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #a08324;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+
+
+/* BANNERRRRRRR CSS */
+.banner {
+  position: relative;
+  background: url('gambar2/villa.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.banner-text {
+  flex: 1;
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.banner-logo {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.banner-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+}
+
+.banner-text p {
+  font-size: 1.5em;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+}
+
+.banner-form {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-booking {
+  background: rgba(16, 110, 13, 0.2);
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  backdrop-filter: blur(8px); 
+}
+
+.grup-input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.grup-input i {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.grup-input label {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.grup-input input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #a08324;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #146829;
+}
+
+
+
+
+/* ABOUT MY VILLAGE CSS */
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #ffffff;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.about-us-image video {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-us-text {
+  max-width: 600px;
+  margin-left: 20px;
+}
+
+.about-us-text h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #a08324;
+}
+
+.about-us-text p {
+  font-size: 1.2em;
+  color: #a08324;
+}
+
+
+
+
+/* INTERMEZO DEKORASI ROOM CSS */
+.decoration-image {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.decoration-image img {
+  width: 100%;
+  height: auto;
+}
+
+.decoration-image h1 {
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 2em; 
+  text-align: center; 
+  z-index: 10; 
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+}
+
+
+
+
+/* OUR ROOM SECTION CSS */
+.rooms {
+  background: #ffffff; 
+}
+
+.rooms-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.room {
+  background: rgba(156, 125, 21, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 18px;
+  transition: 0.3s ease; 
+}
+
+.room:hover {
+  background: #146829;
+}
+
+.room-image {
+  position: relative;
+}
+
+.room-image img {
+  width: 100%;
+  height: auto;
+}
+
+.room-availability {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  background: rgba(175, 141, 27, 0.6);
+  color: #fff;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.room-availability i {
+  margin-right: 5px;
+}
+
+.room-availability.not-available {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.room-details {
+  margin-top: 10px;
+}
+
+.room-details h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.room-details p {
+  font-size: 1em;
+}
+
+.room-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.promo-code {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 8px;
+  font-size: 0.8rem;
+  width: 140px;
+}
+
+.book-now {
+  background: url('gambar2/secroom.jpg') no-repeat center center/cover;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100px;
+  height: 60px;
+  transition: background-color 0.9s ease; 
+}
+
+.book-now:hover {
+  background-color: #146829; 
+}
+
+.book-now img {
+  width: 30px;
+  height: auto;
+  margin-right: 5px;
+}
+
+
+
+
+/* EXPLORE SECTION ULUWATU CSS */
+.decoration-image2 {
+  position: relative;
+  width: 100%;
+  height: 500px; 
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.decoration-image2 img {
+  width: 100%;
+  height: auto;
+}
+
+.decoration-image2 h1,
+.decoration-image2 p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  z-index: 10;
+}
+
+.decoration-image2 h1 {
+  top: 40%; 
+  font-size: 2em; 
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+}
+
+.decoration-image2 p {
+  top: 50%; 
+  font-size: 1.2em; 
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); 
+}
+
+
+
+/* SERVICE SECTION CSSSSS */
+.service-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.service-section .section-title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #a08324;
+}
+
+.service-section .section-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #a08324;
+}
+
+.service-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service-item {
+  width: 23%;
+  margin-bottom: 30px;
+}
+
+.service-item i {
+  font-size: 3em;
+  color: #a08324;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #a08324;
+}
+
+.service-item p {
+  font-size: 1em;
+  color: #a08324;
+}
+
+.button-service {
+  display: block;
+  width: 100%;
+  max-width: 400px; 
+  padding: 15px;
+  background-image: url('gambar2/uluwatu.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 30px auto;
+  text-align: center; 
+  box-sizing: border-box; 
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.button-service:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Darken background on hover */
+}
+
+
+
+/* FOOTER SECTION CSS */
+footer {
+  background-color: #3f3831;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  max-width: 1200px; 
+}
+
+.footer-map {
+  width: 50%;
+  margin-right: 20px; 
+  box-sizing: border-box;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 300px; 
+  border-radius: 5px; 
+}
+
+.footer-contact {
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.footer-contact h3 {
+  margin-bottom: 15px;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.social-media {
+  margin-top: 15px;
+}
+
+.social-icon {
+  font-size: 1.5em;
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #146829; 
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE RESPNSIVE BISMILLAH */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .banner-content {
+    flex-direction: column;
+  }
+
+  .banner-text {
+    margin-bottom: 20px;
+  }
+
+  .banner-form {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .form-booking {
+    display: block;
+  }
+
+  .grup-input {
+    margin-bottom: 10px;
+  }
+
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-content {
+    flex-direction: column;
+  }
+
+  .about-us-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-us-text {
+    text-align: center;
+  }
+
+  .rooms-container {
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .room {
+    margin-bottom: 20px;
+  }
+
+  .decoration-image2 {
+    height: 200px; 
+  }
+
+  .decoration-image2 h1 {
+    font-size: 1.5em; 
+    top: 15%; 
+  }
+
+  .decoration-image2 p {
+    font-size: 0.5em; 
+    top: 45%;
+  }
+
+  .service-item h3,
+  .service-item p {
+    display: none;
+  }
+
+  .service-item {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+
+  .service-item i {
+    font-size: 2em;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-map, .footer-contact {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px; 
+  }
+
+  .footer-contact {
+    text-align: center;
+  }
+}
+
+@media (min-height: 600px) and (max-width: 1024px) {
+  .decoration-image {
+    height: 180px; 
+  }
+}
